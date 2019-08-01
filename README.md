@@ -1,6 +1,6 @@
 # Keyboardio Model 01 Firmware
 
-_The default firmware for the Keyboardio Model 01_
+_The Nick Zylstra firmware for the Keyboardio Model 01_
 
 <h3>This is a quick start guide for folks who are familiar with Arduino and prefer to use the command line. For everyone else:
 
