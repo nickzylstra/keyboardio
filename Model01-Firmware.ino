@@ -445,7 +445,24 @@ void hostPowerManagementEventHandler(kaleidoscope::plugin::HostPowerManagement::
   toggleLedsOnSuspendResume(event);
 }
 
-/** A tiny wrapper, to be used by MagicCombo.
+/** This 'enum' is a list of all the magic combos used by the Model 01's
+ * firmware The names aren't particularly important. What is important is that
+ * each is unique.
+ *
+ * These are the names of your magic combos. They will be used by the
+ * `USE_MAGIC_COMBOS` call below.
+ */
+enum {
+  // Toggle between Boot (6-key rollover; for BIOSes and early boot) and NKRO
+  // mode.
+  COMBO_TOGGLE_NKRO_MODE,
+  // Enter test mode
+  COMBO_ENTER_TEST_MODE
+};
+
+/** Wrappers, to be used by MagicCombo. **/
+
+/**
  * This simply toggles the keyboard protocol via USBQuirks, and wraps it within
  * a function with an unused argument, to match what MagicCombo expects.
  */
@@ -453,13 +470,25 @@ static void toggleKeyboardProtocol(uint8_t combo_index) {
   USBQuirks.toggleKeyboardProtocol();
 }
 
+/**
+ *  This enters the hardware test mode
+ */
+static void enterHardwareTestMode(uint8_t combo_index) {
+  HardwareTestMode.runTests();
+}
+
+
 /** Magic combo list, a list of key combo and action pairs the firmware should
  * recognise.
  */
 USE_MAGIC_COMBOS({.action = toggleKeyboardProtocol,
                   // Left Fn + Esc + Shift
                   .keys = { R3C6, R2C6, R3C7 }
-                 });
+}, {
+  .action = enterHardwareTestMode,
+  // Left Fn + Prog + LED
+  .keys = { R3C6, R0C0, R0C6 }
+});
 
 // First, tell Kaleidoscope which plugins you want to use.
 // The order can be important. For example, LED effects are
@@ -579,6 +608,9 @@ void setup() {
   // This draws more than 500mA, but looks much nicer than a dimmer effect
   LEDRainbowEffect.brightness(150);
   LEDRainbowWaveEffect.brightness(150);
+
+  // Set the action key the test mode should listen for to Left Fn
+  HardwareTestMode.setActionKey(R3C6);
 
   // The LED Stalker mode has a few effects. The one we like is called
   // 'BlazingTrail'. For details on other options, see
