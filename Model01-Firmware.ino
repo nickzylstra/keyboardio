@@ -73,7 +73,8 @@
 #include "Kaleidoscope-MagicCombo.h"
 
 // Support for USB quirks, like changing the key state report protocol
-#include "Kaleidoscope-USB-Quirks.h"  
+#include "Kaleidoscope-USB-Quirks.h"
+
 // Support for produce one keycode (i.e. symbol) when tapped, and a different keycode when held.
 #include "Kaleidoscope-Qukeys.h"
 
