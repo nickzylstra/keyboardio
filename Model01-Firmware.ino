@@ -84,6 +84,9 @@
 // Support for oneshot keys
 #include "Kaleidoscope-Oneshot.h"
 
+// Support for tapdance keys
+#include "Kaleidoscope-TapDance.h"
+
 /** This 'enum' is a list of all the macros used by the Model 01's firmware
   * The names aren't particularly important. What is important is that each
   * is unique.
@@ -234,10 +237,10 @@ KEYMAPS(
 #elif defined (PRIMARY_KEYMAP_MTGAP)
   // Edit this keymap to make a custom layout
   [PRIMARY] = KEYMAP_STACKED
-  (___,           Key_1,              Key_2,            Key_3,         Key_4,            Key_5, Key_LEDEffectNext,
-   Key_Backtick,  Key_W,              Key_C,            Key_L,         Key_D,            Key_K, Key_Tab,
-   Key_PageUp,    MT(LeftControl, R), MT(LeftAlt, S),   LT(NAV, T),    MT(LeftShift, H), Key_M,
-   Key_PageDown,  Key_X,              Key_V,            LT(NUMPAD, G), Key_F,            Key_B, Key_Escape,
+  (___,            Key_1,              Key_2,            Key_3,         Key_4,            Key_5, Key_LEDEffectNext,
+   Key_Backtick,   Key_W,              Key_C,            Key_L,         Key_D,            Key_K, Key_Tab,
+   TD(0),          MT(LeftControl, R), MT(LeftAlt, S),   LT(NAV, T),    MT(LeftShift, H), Key_M,
+   TD(1),          Key_X,              Key_V,            LT(NUMPAD, G), Key_F,            Key_B, Key_Escape,
    OSM(LeftShift), MT(LeftGui, Spacebar), OSM(LeftAlt), OSM(LeftControl),
    ShiftToLayer(FUNC),
 
@@ -409,7 +412,18 @@ const macro_t *macroAction(uint8_t macroIndex, uint8_t keyState) {
   return MACRO_NONE;
 }
 
-
+// tapdance setup for two keys
+void tapDanceAction(uint8_t tap_dance_index, KeyAddr key_addr, uint8_t tap_count, 
+    kaleidoscope::plugin::TapDance::ActionType tap_dance_action) {
+  switch (tap_dance_index) {
+  case 0:
+    return tapDanceActionKeys(tap_count, tap_dance_action,
+                              Key_PageUp, Key_UpArrow);
+  case 1:
+    return tapDanceActionKeys(tap_count, tap_dance_action,
+                              Key_PageDown, Key_DownArrow);
+  }
+}
 
 // These 'solid' color effect definitions define a rainbow of
 // LED color modes calibrated to draw 500mA or less on the
@@ -528,7 +542,7 @@ KALEIDOSCOPE_INIT_PLUGINS(
 
   // The AlphaSquare effect prints each character you type, using your
   // keyboard's LEDs as a display
-  AlphaSquareEffect,
+  // AlphaSquareEffect,
 
   // The stalker effect lights up the keys you've pressed recently
   StalkerEffect,
@@ -557,7 +571,7 @@ KALEIDOSCOPE_INIT_PLUGINS(
   // The MagicCombo plugin lets you use key combinations to trigger custom
   // actions - a bit like Macros, but triggered by pressing multiple keys at the
   // same time.
-  MagicCombo,
+  // MagicCombo,
 
   // The USBQuirks plugin lets you do some things with USB that we aren't
   // comfortable - or able - to do automatically, but can be useful
@@ -566,7 +580,10 @@ KALEIDOSCOPE_INIT_PLUGINS(
   USBQuirks,
 
   // oneshot modifiers
-  OneShot
+  OneShot,
+
+  // tapdance keys
+  TapDance
 );
 
 /** The 'setup' function is one of the two standard Arduino sketch functions.
