@@ -237,19 +237,19 @@ KEYMAPS(
 #elif defined (PRIMARY_KEYMAP_MTGAP)
   // Edit this keymap to make a custom layout
   [PRIMARY] = KEYMAP_STACKED
-  (___,            Key_1,              Key_2,            Key_3,         Key_4,            Key_5, Key_LEDEffectNext,
+  (Key_Escape,     Key_1,              Key_2,            Key_3,         Key_4,            Key_5, Key_LEDEffectNext,
    Key_Backtick,   Key_W,              Key_C,            Key_L,         Key_D,            Key_K, Key_Tab,
    TD(0),          MT(LeftControl, R), MT(LeftAlt, S),   LT(NAV, T),    MT(LeftShift, H), Key_M,
-   TD(1),          Key_X,              Key_V,            LT(NUMPAD, G), Key_F,            Key_B, Key_Escape,
-   OSM(LeftShift), MT(LeftGui, Spacebar), OSM(LeftAlt), OSM(LeftControl),
-   ShiftToLayer(FUNC),
+   TD(1),          Key_X,              Key_V,            LT(NUMPAD, G), Key_F,            Key_B, Key_UpArrow,
+   Key_Tab, MT(LeftGui, Spacebar), OSM(LeftAlt), OSM(LeftShift),
+   OSM(LeftShift),
 
-   LockLayer(QWERTY),             Key_6,            Key_7,            Key_8,              Key_9,                Key_0,         LockLayer(NUMPAD),
-   Key_Enter,     Key_J,          Key_U,            Key_O,            Key_P,              Key_Y,                Key_Equals,
-                  Key_Comma,      LT(PUNC, A),      LT(MOUSE, E),     MT(RightAlt, N),    MT(RightControl, I),  Key_Quote,
-   Key_LeftGui,   Key_Semicolon,  Key_Period,       Key_Slash,        Key_Z,              Key_Q,                Key_Minus,
-   OSM(RightControl), OSM(RightGui), Key_Backspace, OSM(RightShift),
-   ShiftToLayer(FUNC)),
+   LockLayer(QWERTY),               Key_6,            Key_7,            Key_8,              Key_9,                Key_0,         LockLayer(NUMPAD),
+   Key_UpArrow,     Key_J,          Key_U,            Key_O,            Key_P,              Key_Y,                Key_Equals,
+                    Key_Comma,      LT(PUNC, A),      LT(MOUSE, E),     MT(RightAlt, N),    MT(RightControl, I),  Key_Quote,
+   Key_DownArrow,   Key_Semicolon,  Key_Period,       Key_Slash,        Key_Z,              Key_Q,                Key_Minus,
+   OSM(RightControl), OSM(RightGui), Key_Backspace, Key_Enter,
+   OSM(RightShift)),
 
 #else
 
