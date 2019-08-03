@@ -2,6 +2,9 @@
 // Copyright 2016 Keyboardio, inc. <jesse@keyboard.io>
 // See "LICENSE" for license details
 
+// graphic for layout
+// http://www.keyboard-layout-editor.com/##@_name=Keyboardio%20Model%2001%20MTGAP%20Custom&author=Nick%20Zylstra&radii=50px&switchMount=alps&switchBrand=matias&switchType=PG155B01&pcb:true&css=.keyboardio%20%7B%20%7D%0A%0A.keyboardio-logo%2F:after%20%7B%0A%20%20%20%20background%2F:%20inherit%2F%3B%0A%20%20%20%20content%2F:'%5C00a0'%2F%3B%20%0A%20%20%20%20display%2F:inline-block%2F%3B%20%0A%20%20%20%20width%2F:%202em%2F%3B%20%0A%20%20%20%20height%2F:%202em%2F%3B%20%0A%20%20%20%20background-size%2F:%202em%2F%3B%20%0A%20%20%20%20background-image%2F:%20url(http%2F:%2F%2F%2F%2F67.media.tumblr.com%2F%2Favatar%2F_ddfdafa42fef%2F_128.png)%2F%3B%0A%7D%0A%3B&@_y:6.25&x:0.5&t=%23ff000f%0A%230075ff%0A%235200ff%0A%23048a09%0A%231c0801&w:2.5&h:2.5%3B&=%F0%9F%90%ADMOUSE%0APUNC%0ANAV%0ANUM%0AHOLD%20for%20LAYER%20%2F%2F%20MOD%3B&@_r:10&y:-7.25&x:4&t=%23ff000f%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c&fa@:0&:0&:0&:0&:0&:0&:0&:0&:0&:0&:7%3B%3B&=F3%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A3&_h:1.05%3B&=F4%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A4%3B&@_y:-0.9&x:3%3B&=F2%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A2%3B&@_y:-1&x:6&h:1.1%3B&=F5%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A5%3B&@_y:-0.9&x:2&h:1.4%3B&=F1%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A1%3B&@_y:-0.9&x:1&t=%23050201&a:7&fa@:5%3B&h:1.3%3B&=prog%3B&@_y:-0.9&x:7&h:1.5%3B&=led%3B&@_y:-0.3999999999999999&x:4&t=%23ff000f%0A%230075ff%0A%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c&a:4&fa@:0&:0&:0&:0&:0&:0&:0&:0&:0&:0&:7%3B%3B&=%E2%87%A7%0A%7B%0A%0A%0A%0A%0A%0A%0A%0A%0AL%3B&@_y:-0.95&x:5%3B&=RB%0A%7D%0A%0A%0A%0A%0A%0A%0A%0A%0AD%3B&@_y:-0.95&x:3%3B&=LB%0A%23%0A%0A%0A%0A%0A%0A%0A%0A%0AC%3B&@_y:-0.8999999999999999&x:6%3B&=wEnd%0A%5E%0A%0A%0A%0A%0A%0A%0A%0A%0AK%3B&@_y:-0.6000000000000001&x:1%3B&=%0A%5C%0A%0A%0A%0A%0A%0A%0A~%0A%0A%60&=%0A%2F@%0A%0A%0A%0A%0A%0A%0A%0A%0AW%3B&@_y:-0.7&x:7&t=%23ff000f&f:5&fa@:3%3B&h:1.25%3B&=wNE%0A%0A%0A%0A%0A%0A%0A%0A%0Atab%3B&@_y:-0.8999999999999999&x:4&t=%23ff000f%0A%230075ff%0A%0A%0A%235200ff%0A%0A%0A%0A%0A%0A%230d0c0c&f:3&fa@:0&:0&:0&:0&:0&:0&:0&:0&:0&:0&:7%3B%3B&=%E2%87%A9%0A(%0A%0A%0ANAV%0A%0A%0A%0A%0A%0AT%3B&@_y:-0.9499999999999997&x:5&t=%23ff000f%0A%230075ff%0A%235200ff%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c&n:true%3B&=%E2%87%A8%0A)%0A%E2%87%A7%0A%0A%E2%87%A7SFT%0A%0A%0A%0A%0A%0AH%3B&@_y:-0.9500000000000002&x:3&t=%23ff000f%0A%230075ff%0A%235200ff%0A%0A%231c0801%0A%0A%0A%0A%0A%0A%230d0c0c%3B&=%E2%87%A6%0A%7C%0A%E2%8E%87%0A%0A%E2%8E%87OPT%0A%0A%0A%0A%0A%0AS%3B&@_y:-0.8999999999999999&x:6&t=%23ff000f%0A%230075ff%0A%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c%3B&=wNW%0A!%0A%0A%0A%0A%0A%0A%0A%0A%0AM%3B&@_y:-0.6000000000000001&x:1&t=%23050201&a:7&fa@:5%3B%3B&=pgup&_t=%23ff000f%0A%230075ff%0A%235200ff%0A%0A%231c0801%0A%0A%0A%0A%0A%0A%230d0c0c&a:4&fa@:5&:0&:0&:0&:0&:0&:0&:0&:0&:0&:7%3B%3B&=%0A%2F&%0A%E2%8C%83%0A%0A%E2%8C%83CTL%0A%0A%0A%0A%0A%0AR%3B&@_y:-0.6000000000000001&x:4&t=%23ff000f%0A%230075ff%0A%0A%0A%23048a09%0A%0A%0A%0A%0A%0A%230d0c0c&fa@:0&:0&:0&:0&:0&:0&:0&:0&:0&:0&:7%3B&h:1.15%3B&=%E2%8C%98C%0A%5B%0A%0A%0ANUM%0A%0A%0A%0A%0A%0AG%3B&@_y:-0.9500000000000002&x:5&t=%23ff000f%0A%230075ff%0A%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c&h:1.1%3B&=%E2%8C%98V%0A%5D%0A%0A%0A%0A%0A%0A%0A%0A%0AF%3B&@_y:-0.9500000000000002&x:3&h:1.2%3B&=%E2%8C%98X%0A%25%0A%0A%0A%0A%0A%0A%0A%0A%0AV%3B&@_y:-0.9500000000000002&x:7&t=%23ff000f&f:5&fa@:3%3B&h:1.25%3B&=wSE%0A%0A%0A%0A%0A%0A%0A%0A%0Aesc%3B&@_y:-0.9500000000000002&x:6&t=%23ff000f%0A%230075ff%0A%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c&f:3&fa@:0&:0&:0&:0&:0&:0&:0&:0&:0&:0&:7%3B%3B&=wSW%0A*%0A%0A%0A%0A%0A%0A%0A%0A%0AB%3B&@_y:-0.6000000000000001&x:1&t=%23050201&a:7&fa@:5%3B%3B&=pgdn&_t=%23ff000f%0A%230075ff%0A%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c&a:4&fa@:0&:0&:0&:0&:0&:0&:0&:0&:0&:0&:7%3B%3B&=%E2%8C%98Z%0A$%0A%0A%0A%0A%0A%0A%0A%0A%0AX%3B&@_r:22.5&rx:4&ry:9&y:-3.9800000000000004&x:-0.75&t=%23050201%0A%230d0c0c&a:5&f:5%3B&=%0Ashift%3B&@_r:30&y:-1.0199999999999996&x:-0.1499999999999999&t=%23ff000f%0A%0A%235200ff&a:4&fa@:0&:0&:3%3B%3B&=%0A%0A%E2%8C%98%0A%0A%E2%8C%98LGUI%3B&@_rx:8.5&ry:4.5&y:3.8499999999999996&x:-1.5&t=%23050201&a:7&f:9&w:1.5&h:1.5%3B&=%3B&@_x:-8.5&t=%23000000&f:3%3B&=%3B&@_x:-8.5%3B&=%3B&@_r:37.5&rx:4&ry:9&y:-4.07&x:0.4500000000000002&t=%23050201%0A%230d0c0c&a:5&f:5&f2:7%3B&=%0A%E2%8E%87%3B&@_r:45&y:-1.1500000000000004&x:1.0199999999999996%3B&=%0A%E2%8C%83%3B&@_r:-45&rx:12&y:-3.55&x:-1.3599999999999994%3B&=%0A%E2%8C%83%3B&@_r:-37.5&y:-0.9500000000000002&x:-0.6899999999999995%3B&=%0A%E2%8C%98%3B&@_r:-30&rx:8.5&ry:5&y:3.42&x:0.25&t=%23050201&a:7&f:9&w:1.5&h:1.5%3B&=%3B&@_rx:12&ry:9&y:-3.5199999999999996&x:-0.009999999999999787&t=%23ff000f%0A%0A%235200ff%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c&a:4&f:5&fa@:0&:0&:3%3B%3B&=%0A%0A%E2%8C%A6%0A%0A%0A%0A%0A%0A%0A%0A%E2%8C%AB%3B&@_r:-22.5&rx:12.08&ry:9.38&y:-4&x:0.7200000000000006&t=%23050201%0A%230d0c0c&a:5%3B&=%0Ashift%3B&@_r:-10&rx:17&ry:0&x:-6&t=%23ff000f%0A%0A%235200ff%0A%23048a09%0A%0A%0A%0A%0A%0A%0A%230d0c0c&a:4&f:3&fa@:0&:0&:0&:0&:0&:0&:0&:0&:0&:0&:7%3B&h:1.05%3B&=%0A%0AF7%0A7%0A%0A%0A%0A%0A%0A%0A7&=%0A%0AF8%0A8%0A%0A%0A%0A%0A%0A%0A8%3B&@_y:-0.9&x:-7&t=%23ff000f%0A%0A%235200ff%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c&h:1.1%3B&=%0A%0AF6%0A%0A%0A%0A%0A%0A%0A%0A6&_x:2&t=%23ff000f%0A%0A%235200ff%0A%23048a09%0A%0A%0A%0A%0A%0A%0A%230d0c0c&h:1.1%3B&=%0A%0AF9%0A9%0A%0A%0A%0A%0A%0A%0A9%3B&@_y:-0.9&x:-3&h:1.4%3B&=%0A%0AF10%0A-%0A%0A%0A%0A%0A%0A%0A0%3B&@_y:-0.9&x:-2&t=%23ff000f%0A%0A%235200ff%0A%0A%0A%0A%0A%0A%0A%23048a09&fa@:0&:0&:0&:0&:0&:0&:0&:0&:0&:5%3B&h:1.3%3B&=%0A%0AF11%0A%0A%0A%0A%0A%0A%0Anum%3B&@_y:-0.9&x:-8&t=%23050201&a:7&f:5&h:1.5%3B&=qwrty%3B&@_y:-0.3999999999999999&x:-5&t=%23ff000f%0A%0A%235200ff%0A%23048a09%0A%0A%0A%0A%0A%0A%0A%230d0c0c&a:4&f:3&fa@:0&:0&:0&:0&:0&:0&:0&:0&:0&:0&:7%3B%3B&=%0A%0A%E2%87%B2%0A5%0A%0A%0A%0A%0A%0A%0AO%3B&@_y:-0.95&x:-6%3B&=%0A%0A%E2%87%B1%0A4%0A%0A%0A%0A%0A%0A%0AU%3B&@_y:-0.8500000000000001&x:-7&t=%23ff000f%0A%0A%235200ff%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c%3B&=%0A%0A%E2%8C%98W%0A%0A%0A%0A%0A%0A%0A%0AJ&_x:2&t=%23ff000f%0A%0A%0A%23048a09%0A%0A%0A%0A%0A%0A%0A%230d0c0c%3B&=%0A%0A%0A6%0A%0A%0A%0A%0A%0A%0AP%3B&@_y:-0.6000000000000001&x:-3%3B&=%0A%0A%0A+%0A%0A%0A%0A%0A%0A%0AY&_t=%23ff000f%0A%0A%235200ff%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c%3B&=%0A%0AF12%0A%0A%0A%0A%0A%0A+%0A%0A%2F=%3B&@_y:-0.7&x:-8&t=%23050201&a:7&f:5&h:1.25%3B&=enter%3B&@_y:-0.8999999999999999&x:-5&t=%23ff000f%0A%0A%235200ff%0A%23048a09%0A%0A%0A%0A%0A%0A%0A%230d0c0c&a:4&f:3&fa@:0&:0&:0&:0&:0&:0&:0&:0&:0&:0&:7%3B%3B&=%0A%0A%E2%87%A7%0A2%0A%F0%9F%90%ADMSE%0A%0A%0A%0A%0A%0AE%3B&@_y:-0.9499999999999997&x:-6&t=%23ff000f%0A%0A%235200ff%0A%23048a09%0A%230075ff%0A%0A%0A%0A%0A%0A%230d0c0c&n:true%3B&=LB%0A%0A%E2%87%A9%0A1%0APUNC%0A%0A%0A%0A%0A%0AA%3B&@_y:-0.8500000000000001&x:-7&t=%23ff000f%0A%0A%235200ff%0A%0A%0A%0A%0A%0A%0A%0A%230d0c0c%3B&=%0A%0A%E2%87%A6%0A%0A%0A%0A%0A%0A%3C%0A%0A,&_x:2&t=%23ff000f%0A%0A%235200ff%0A%23048a09%0A%0A%0A%0A%0A%0A%0A%230d0c0c%3B&=RB%0A%0A%E2%87%A8%0A3%0A%E2%8C%A5%20OPT%0A%0A%0A%0A%0A%0AN%3B&@_y:-0.6000000000000001&x:-3&t=%23ff000f%0A%0A%0A%23048a09%0A%0A%0A%0A%0A%0A%0A%230d0c0c%3B&=%0A%0A%0A%2F=%0A%E2%8C%83%20CTL%0A%0A%0A%0A%0A%0AI&_t=%23050201%0A%230d0c0c&a:5&f2:7%3B&=%22%0A'%3B&@_y:-0.6000000000000001&x:-5&t=%23ff000f%0A%0A%235200ff%0A%23048a09%0A%0A%0A%0A%0A%0A%0A%230d0c0c&a:4&fa@:0&:7&:0&:0&:7&:7&:7&:7&:0&:7&:7%3B&h:1.15%3B&=%0A%0A%E2%87%9E%0A.%0A%0A%0A%0A%0A%3F%0A%0A%2F%2F%3B&@_y:-0.9500000000000002&x:-6&h:1.1%3B&=%0A%0A%E2%87%9F%0A0%0A%0A%0A%0A%0A%3E%0A%0A.%3B&@_y:-0.8999999999999999&x:-8&t=%23050201&a:7&f:5&h:1.25%3B&=%E2%8C%98%3B&@_y:-0.9500000000000002&x:-7&t=%23050201%0A%230d0c0c&a:5&f:3&f2:7%3B&=%2F:%0A%2F%3B&_x:2&t=%23ff000f%0A%0A%0A%23048a09%0A%0A%0A%0A%0A%0A%0A%230d0c0c&a:4&fa@:0&:7&:7&:0&:7&:7&:7&:7&:7&:7&:7%3B&h:1.2%3B&=%0A%0A%0A*%0A%0A%0A%0A%0A%0A%0AZ%3B&@_y:-0.6000000000000001&x:-3%3B&=%0A%0A%0A%2F%2F%0A%0A%0A%0A%0A%0A%0AQ&_fa@:0&:7&:7&:0&:7&:7&:7&:7&:0&:7&:7%3B%3B&=%0A%0A%0A%E2%86%B5%0A%0A%0A%0A%0A%2F_%0A%0A-
+
 #ifndef BUILD_INFORMATION
 #define BUILD_INFORMATION "locally built"
 #endif
@@ -77,6 +80,9 @@
 
 // Support for produce one keycode (i.e. symbol) when tapped, and a different keycode when held.
 #include "Kaleidoscope-Qukeys.h"
+
+// Support for oneshot keys
+#include "Kaleidoscope-Oneshot.h"
 
 /** This 'enum' is a list of all the macros used by the Model 01's firmware
   * The names aren't particularly important. What is important is that each
@@ -232,14 +238,14 @@ KEYMAPS(
    Key_Backtick,  Key_W,              Key_C,            Key_L,         Key_D,            Key_K, Key_Tab,
    Key_PageUp,    MT(LeftControl, R), MT(LeftAlt, S),   LT(NAV, T),    MT(LeftShift, H), Key_M,
    Key_PageDown,  Key_X,              Key_V,            LT(NUMPAD, G), Key_F,            Key_B, Key_Escape,
-   Key_LeftShift, MT(LeftGui, Spacebar), Key_LeftGui, Key_LeftControl,
+   OSM(LeftShift), MT(LeftGui, Spacebar), OSM(LeftAlt), OSM(LeftControl),
    ShiftToLayer(FUNC),
 
    LockLayer(QWERTY),             Key_6,            Key_7,            Key_8,              Key_9,                Key_0,         LockLayer(NUMPAD),
    Key_Enter,     Key_J,          Key_U,            Key_O,            Key_P,              Key_Y,                Key_Equals,
                   Key_Comma,      LT(PUNC, A),      LT(MOUSE, E),     MT(RightAlt, N),    MT(RightControl, I),  Key_Quote,
    Key_LeftGui,   Key_Semicolon,  Key_Period,       Key_Slash,        Key_Z,              Key_Q,                Key_Minus,
-   Key_RightControl, Key_RightAlt, Key_Backspace, Key_RightShift,
+   OSM(RightControl), OSM(RightGui), Key_Backspace, OSM(RightShift),
    ShiftToLayer(FUNC)),
 
 #else
@@ -292,7 +298,7 @@ KEYMAPS(
    ___,                        LGUI(Key_W),            Key_Home,                 Key_End,                  ___,             ___,              Key_F12,
                                Key_LeftArrow,          Key_DownArrow,            Key_UpArrow,              Key_RightArrow,  ___,              ___,
    ___,                        ___,                    Key_PageDown,             Key_PageUp,               ___,             ___,              ___,
-   ___, ___, ___, ___,
+   ___, ___, Key_Delete, ___,
    ___),
 
   [MOUSE] =  KEYMAP_STACKED
@@ -322,7 +328,7 @@ KEYMAPS(
    ___, ___, ___, ___, ___, ___, ___,
         ___, ___, ___, ___, ___, ___,
    ___, ___, ___, ___, ___, ___, ___,
-   ___, ___, Key_Delete, ___,
+   ___, ___, ___, ___,
    ___),
    
   [QWERTY] = KEYMAP_STACKED
@@ -445,24 +451,7 @@ void hostPowerManagementEventHandler(kaleidoscope::plugin::HostPowerManagement::
   toggleLedsOnSuspendResume(event);
 }
 
-/** This 'enum' is a list of all the magic combos used by the Model 01's
- * firmware The names aren't particularly important. What is important is that
- * each is unique.
- *
- * These are the names of your magic combos. They will be used by the
- * `USE_MAGIC_COMBOS` call below.
- */
-enum {
-  // Toggle between Boot (6-key rollover; for BIOSes and early boot) and NKRO
-  // mode.
-  COMBO_TOGGLE_NKRO_MODE,
-  // Enter test mode
-  COMBO_ENTER_TEST_MODE
-};
-
-/** Wrappers, to be used by MagicCombo. **/
-
-/**
+/** A tiny wrapper, to be used by MagicCombo.
  * This simply toggles the keyboard protocol via USBQuirks, and wraps it within
  * a function with an unused argument, to match what MagicCombo expects.
  */
@@ -470,25 +459,13 @@ static void toggleKeyboardProtocol(uint8_t combo_index) {
   USBQuirks.toggleKeyboardProtocol();
 }
 
-/**
- *  This enters the hardware test mode
- */
-static void enterHardwareTestMode(uint8_t combo_index) {
-  HardwareTestMode.runTests();
-}
-
-
 /** Magic combo list, a list of key combo and action pairs the firmware should
  * recognise.
  */
 USE_MAGIC_COMBOS({.action = toggleKeyboardProtocol,
                   // Left Fn + Esc + Shift
                   .keys = { R3C6, R2C6, R3C7 }
-}, {
-  .action = enterHardwareTestMode,
-  // Left Fn + Prog + LED
-  .keys = { R3C6, R0C0, R0C6 }
-});
+                 });
 
 // First, tell Kaleidoscope which plugins you want to use.
 // The order can be important. For example, LED effects are
@@ -586,7 +563,10 @@ KALEIDOSCOPE_INIT_PLUGINS(
   // comfortable - or able - to do automatically, but can be useful
   // nevertheless. Such as toggling the key report protocol between Boot (used
   // by BIOSes) and Report (NKRO).
-  USBQuirks
+  USBQuirks,
+
+  // oneshot modifiers
+  OneShot
 );
 
 /** The 'setup' function is one of the two standard Arduino sketch functions.
@@ -608,9 +588,6 @@ void setup() {
   // This draws more than 500mA, but looks much nicer than a dimmer effect
   LEDRainbowEffect.brightness(150);
   LEDRainbowWaveEffect.brightness(150);
-
-  // Set the action key the test mode should listen for to Left Fn
-  HardwareTestMode.setActionKey(R3C6);
 
   // The LED Stalker mode has a few effects. The one we like is called
   // 'BlazingTrail'. For details on other options, see
