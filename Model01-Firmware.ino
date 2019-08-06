@@ -236,20 +236,19 @@ KEYMAPS(
    ShiftToLayer(FUNCTION)),
 
 #elif defined (PRIMARY_KEYMAP_MTGAP)
-  // Edit this keymap to make a custom layout
   [PRIMARY] = KEYMAP_STACKED
   (Key_Escape,     Key_1,              Key_2,            Key_3,         Key_4,            Key_5, Key_LEDEffectNext,
    Key_Backtick,   Key_W,              Key_C,            Key_L,         Key_D,            Key_K, LGUI(Key_V),
    Key_PageUp,     MT(LeftControl, R), MT(LeftAlt, S),   LT(NAV, T),    MT(LeftShift, H), Key_M,
-   Key_PageDown,   Key_X,              Key_V,            LT(NUMPAD, G), Key_F,            Key_B, LGUI(Key_C),
-   LT(PUNC, Tab),  MT(LeftGui, Spacebar), OSM(LeftAlt), OSM(LeftShift),
+   Key_PageDown,   Key_X,              Key_V,            Key_G,         LT(NUMPAD, F),    Key_B, LGUI(Key_C),
+   LT(PUNC, Tab),  MT(LeftGui, Spacebar), OSM(LeftAlt), OSM(LeftControl),
    OSM(LeftShift),
 
    LockLayer(QWERTY),               Key_6,            Key_7,            Key_8,              Key_9,                Key_0,         LockLayer(NUMPAD),
    Key_UpArrow,     Key_J,          Key_U,            Key_O,            Key_P,              Key_Y,                Key_Equals,
-                    Key_Comma,      LT(PUNC, A),      LT(MOUSE, E),     MT(RightAlt, N),    MT(RightControl, I),  Key_Quote,
-   Key_DownArrow,   Key_Semicolon,  Key_Period,       Key_Slash,        Key_Z,              Key_Q,                Key_Minus,
-   OSM(RightControl), OSM(RightGui), Key_Backspace, Key_Enter,
+                    Key_Comma,      LT(PUNC, A),      LT(MOUSE, E),     MT(RightAlt, N),    MT(RightControl, I),  Key_Semicolon,
+   Key_DownArrow,   Key_Slash,      Key_Period,       Key_Quote,        Key_Z,              Key_Q,                Key_Minus,
+   OSM(RightShift), OSM(RightGui), Key_Backspace, Key_Enter,
    OSM(RightShift)),
 
 #else
