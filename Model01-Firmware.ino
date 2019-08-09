@@ -238,18 +238,18 @@ KEYMAPS(
 #elif defined (PRIMARY_KEYMAP_MTGAP)
   [PRIMARY] = KEYMAP_STACKED
   (Key_Escape,     Key_1,              Key_2,            Key_3,         Key_4,            Key_5, Key_LEDEffectNext,
-   Key_Backtick,   Key_W,              Key_C,            Key_L,         Key_D,            Key_K, LGUI(Key_V),
-   Key_PageUp,     MT(LeftControl, R), MT(LeftAlt, S),   LT(NAV, T),    LT(NUMPAD, H),    Key_M,
-   Key_PageDown,   Key_X,              Key_V,            Key_G,         Key_F,            Key_B, LGUI(Key_C),
-   LT(PUNC, Tab),  MT(LeftGui, Spacebar), OSM(LeftAlt), OSM(LeftControl),
-   OSM(LeftShift),
+   Key_Backtick,   Key_W,              Key_C,            Key_L,         Key_D,            Key_K, ___,
+   Key_PageUp,     MT(LeftControl, R), MT(LeftAlt, S),   LT(NAV, T),    MT(LeftShift, H), Key_M,
+   Key_PageDown,   Key_X,              Key_V,            Key_G,         Key_F,            Key_B, ___,
+   LT(MOUSE, Tab),  MT(LeftGui, Spacebar), OSM(LeftAlt), OSM(LeftGui),
+   ShiftToLayer(NUMPAD),
 
-   LockLayer(QWERTY),               Key_6,            Key_7,            Key_8,              Key_9,                Key_0,         LockLayer(NUMPAD),
-   Key_UpArrow,     Key_J,          Key_U,            Key_O,            Key_P,              Key_Y,                Key_Equals,
-                    Key_Comma,      LT(PUNC, A),      LT(MOUSE, E),     MT(RightAlt, N),    MT(RightControl, I),  Key_Semicolon,
-   Key_DownArrow,   Key_Slash,      Key_Period,       Key_Quote,        Key_Z,              Key_Q,                Key_Minus,
-   OSM(RightShift), OSM(RightGui), Key_Backspace, Key_Enter,
-   OSM(RightShift)),
+   LockLayer(QWERTY),               Key_6,             Key_7,            Key_8,              Key_9,                Key_0,         LockLayer(NUMPAD),
+   Key_UpArrow,     Key_J,          Key_U,             Key_O,            Key_P,              Key_Y,                Key_Equals,
+                    Key_Comma,      MT(RightShift, A), LT(MOUSE, E),     MT(RightAlt, N),    MT(RightControl, I),  Key_Semicolon,
+   Key_DownArrow,   Key_Slash,      Key_Period,        Key_Quote,        Key_Z,              Key_Q,                Key_Minus,
+   OSM(RightControl), OSM(RightShift), MT(RightGui, Backspace), LT(NAV, Enter),
+   ShiftToLayer(PUNC)),
 
 #else
 
@@ -262,7 +262,7 @@ KEYMAPS(
   [NUMPAD] =  KEYMAP_STACKED
   (___, ___, ___, ___, ___, ___, ___,
    ___, ___, ___, ___, ___, ___, ___,
-   ___, Key_LeftControl, Key_LeftAlt, ___, ___, ___,
+   ___, Key_LeftControl, Key_LeftAlt, ___, Key_LeftShift, ___,
    ___, ___, ___, ___, ___, ___, ___,
    ___, Key_LeftGui, ___, ___,
    ___,
