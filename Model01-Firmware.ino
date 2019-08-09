@@ -316,7 +316,7 @@ KEYMAPS(
    ___, ___, ___, ___, ___, ___, ___,
         ___, Key_mouseBtnL, ___, Key_mouseBtnR, ___, ___,
    ___, ___, ___, ___, ___, ___, ___,
-   ___, ___, ___, ___,
+   ___, ___, Key_Backspace, ___,
    ___),
 
   [FUNC] =  KEYMAP_STACKED
