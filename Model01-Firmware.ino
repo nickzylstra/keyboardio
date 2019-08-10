@@ -246,10 +246,10 @@ KEYMAPS(
 
    LockLayer(QWERTY),               Key_6,             Key_7,            Key_8,              Key_9,                Key_0,         LockLayer(NUMPAD),
    Key_UpArrow,     Key_J,          Key_U,             Key_O,            Key_P,              Key_Y,                Key_Equals,
-                    Key_Comma,      MT(RightShift, A), LT(MOUSE, E),     MT(RightAlt, N),    MT(RightControl, I),  Key_Semicolon,
+                    Key_Comma,      LT(PUNC, A),       LT(MOUSE, E),     MT(RightAlt, N),    MT(RightControl, I),  Key_Semicolon,
    Key_DownArrow,   Key_Slash,      Key_Period,        Key_Quote,        Key_Z,              Key_Q,                Key_Minus,
-   OSM(RightControl), OSM(RightShift), MT(RightGui, Backspace), LT(NAV, Enter),
-   ShiftToLayer(PUNC)),
+   OSM(RightControl), OSM(RightShift), Key_Backspace, MT(RightGui, Enter),
+   ShiftToLayer(NAV)),
 
 #else
 
@@ -316,7 +316,7 @@ KEYMAPS(
    ___, ___, ___, ___, ___, ___, ___,
         ___, Key_mouseBtnL, ___, Key_mouseBtnR, ___, ___,
    ___, ___, ___, ___, ___, ___, ___,
-   ___, ___, Key_Backspace, ___,
+   ___, ___, ___, ___,
    ___),
 
   [FUNC] =  KEYMAP_STACKED
