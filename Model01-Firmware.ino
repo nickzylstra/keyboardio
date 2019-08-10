@@ -238,9 +238,9 @@ KEYMAPS(
 #elif defined (PRIMARY_KEYMAP_MTGAP)
   [PRIMARY] = KEYMAP_STACKED
   (Key_Escape,     Key_1,              Key_2,            Key_3,         Key_4,            Key_5, Key_LEDEffectNext,
-   Key_Backtick,   Key_W,              Key_C,            Key_L,         Key_D,            Key_K, ___,
+   Key_Backtick,   Key_W,              Key_C,            Key_L,         Key_D,            Key_K, LALT(LGUI(Key_RightArrow)),
    Key_PageUp,     MT(LeftControl, R), MT(LeftAlt, S),   LT(NAV, T),    MT(LeftShift, H), Key_M,
-   Key_PageDown,   Key_X,              Key_V,            Key_G,         Key_F,            Key_B, ___,
+   Key_PageDown,   Key_X,              Key_V,            Key_G,         Key_F,            Key_B, LALT(LGUI(Key_LeftArrow)),
    LT(MOUSE, Tab),  MT(LeftGui, Spacebar), OSM(LeftAlt), OSM(LeftGui),
    ShiftToLayer(NUMPAD),
 
