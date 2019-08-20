@@ -52,7 +52,7 @@
 // Support for an LED mode that makes a red pixel chase a blue pixel across the keyboard
 #include "Kaleidoscope-LEDEffect-Chase.h"
 
-// Support for LED modes that pulse the keyboard's LED in a rainbow pattern
+// Support for LED modes that pulse the keyboard's LED in a rai nbow pattern
 #include "Kaleidoscope-LEDEffect-Rainbow.h"
 
 // Support for an LED mode that lights up the keys as you press them
@@ -242,7 +242,7 @@ KEYMAPS(
    Key_Backtick,   Key_W,              Key_C,            LT(NUMPAD, L), Key_D,            Key_K, LALT(LGUI(Key_RightArrow)),
    Key_PageUp,     MT(LeftGui, R),     MT(LeftAlt, S),   LT(NAV, T),    MT(LeftShift, H), Key_M,
    Key_PageDown,   Key_X,              Key_V,            Key_G,         Key_F,            Key_B, LALT(LGUI(Key_LeftArrow)),
-   LT(MOUSE, Tab),  MT(LeftControl, Spacebar), OSM(LeftGui), OSM(LeftAlt),
+   MT(LeftControl, Tab), Key_Spacebar, OSM(LeftGui), OSM(LeftAlt),
    ShiftToLayer(MOUSE),
 
    LockLayer(QWERTY),               Key_6,             Key_7,            Key_8,              Key_9,                Key_0,         LockLayer(NUMPAD),
@@ -302,7 +302,7 @@ KEYMAPS(
    ___, ___,                  Key_Home,                     Key_End,                      ___,                    ___,        Key_F12,
         Key_LeftArrow,        Key_DownArrow,                Key_UpArrow,                  Key_RightArrow,         ___,        ___,
    ___, LALT(Key_LeftArrow),  LSHIFT(LALT(Key_LeftArrow)),  LSHIFT(LALT(Key_RightArrow)), LALT(Key_RightArrow),   ___,        ___,
-   ___, ___, Key_Delete, ___,
+   ___, ___, ___, ___,
    ___),
 
   [MOUSE] =  KEYMAP_STACKED
