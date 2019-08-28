@@ -237,18 +237,17 @@ KEYMAPS(
 
 #elif defined (PRIMARY_KEYMAP_MTGAP)
   [PRIMARY] = KEYMAP_STACKED
-  (Key_Escape,     Key_1,              Key_2,            Key_3,         Key_4,            Key_5, Key_LEDEffectNext,
-   Key_Backtick,   Key_W,              Key_C,            LT(NUMPAD, L), Key_D,            Key_K, Key_Tab,
-   Key_PageUp,     MT(LeftGui, R),     MT(LeftAlt, S),   LT(FUNC, T),   MT(LeftShift, H), Key_M,
-   Key_PageDown,   Key_X,              Key_V,            Key_G,         Key_F,            Key_B, LALT(LGUI(Key_LeftArrow)),
-   Key_LeftShift, Key_Spacebar, OSM(LeftGui), OSM(LeftAlt),
+  (Key_Escape,     Key_1,              Key_2,            Key_3,            Key_4,            Key_5, Key_LEDEffectNext,
+   Key_Backtick,   Key_W,              Key_C,            Key_L,            Key_D,            Key_K, Key_Tab,
+   Key_PageUp,     MT(LeftGui, R),     MT(LeftAlt, S),   MT(LeftShift, T), LT(NUMPAD, H),    Key_M,
+   Key_PageDown,   Key_X,              Key_V,            Key_G,            Key_F,            Key_B, LALT(LGUI(Key_LeftArrow)),
+   OSM(LeftControl), Key_Spacebar, OSM(LeftShift), OSM(LeftGui), 
    ShiftToLayer(FUNC),
-
-   Key_UpArrow,         Key_6,          Key_7,             Key_8,            Key_9,              Key_0,                LockLayer(NUMPAD),
-   Key_Enter,           Key_J,          Key_U,             Key_O,            Key_P,              Key_Y,                Key_Equals,
-                        Key_Comma,      MT(RightShift, A), LT(PUNC, E),      MT(RightAlt, N),    MT(RightGui, I),      Key_Semicolon,
-   Key_DownArrow,       Key_Slash,      Key_Period,        Key_Quote,        Key_Z,              Key_Q,                Key_Minus,
-   OSM(RightControl), OSM(RightShift), Key_Backspace, Key_Delete,
+   ___,                   Key_6,          Key_7,             Key_8,             Key_9,              Key_0,                LockLayer(NUMPAD),
+   Key_Enter,             Key_J,          Key_U,             Key_O,             Key_P,              Key_Y,                Key_Equals,
+                          Key_Comma,      LT(PUNC, A),       MT(RightShift, E), MT(RightAlt, N),    MT(RightGui, I),      Key_Semicolon,
+   LCTRL(Key_UpArrow),    Key_Slash,      Key_Period,        Key_Quote,         Key_Z,              Key_Q,                Key_Minus,
+   OSM(LeftAlt), OSM(RightShift), Key_Backspace, Key_Delete,
    ShiftToLayer(FUNC)),
 
 #else
@@ -637,6 +636,7 @@ void setup() {
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 2), LGUI(Key_W)),                  // c
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 0), LGUI(Key_LeftArrow)),          // backtick
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 6), LCTRL(LSHIFT(LGUI(Key_4)))),   // led
+    kaleidoscope::plugin::Qukey(0, KeyAddr(2, 9), LCTRL(Key_DownArrow)),         // butterfly
     // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 9), Key_UpArrow),                  // enter
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 0), Key_UpArrow),                  // pgup
     // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 10), Key_Delete),                  // n
