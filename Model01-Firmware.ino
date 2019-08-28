@@ -84,6 +84,9 @@
 // Support for oneshot keys
 #include "Kaleidoscope-Oneshot.h"
 
+// Support for modifier led activation
+#include "Kaleidoscope-LED-ActiveModColor.h"
+
 // Support for tapdance keys
 // #include "Kaleidoscope-TapDance.h"
 
@@ -555,7 +558,10 @@ KALEIDOSCOPE_INIT_PLUGINS(
   USBQuirks,
 
   // oneshot modifiers
-  OneShot
+  OneShot,
+
+  // colored modifiers
+  ActiveModColorEffect
 
   // tapdance keys
   // TapDance
@@ -645,6 +651,9 @@ void setup() {
 
   Qukeys.setTimeout(250);
   Qukeys.setReleaseDelay(20);
+
+  // set mod highlighting color
+  ActiveModColorEffect.highlight_color = CRGB(0x00, 0xff, 0xff);
 }
 
 /** loop is the second of the standard Arduino sketch functions.
