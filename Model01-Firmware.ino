@@ -261,17 +261,17 @@ KEYMAPS(
 
 
   [FUNC] =  KEYMAP_STACKED
-  (___,                        Key_F1,   Key_F2,            Key_F3,             Key_F4,            Key_F5,           ___,
-   ___,                        ___,      Key_mouseScrollR,  Key_mouseUp,        Key_mouseScrollL,  Key_mouseWarpEnd, Key_mouseWarpNE,
-   Consumer_ScanNextTrack,     ___,      Key_mouseL,        Key_mouseDn,        Key_mouseR,        Key_mouseWarpNW,
-   Consumer_ScanPreviousTrack, ___,      ___,               Key_mouseScrollDn,  Key_mouseScrollUp, Key_mouseWarpSW,  Key_mouseWarpSE,
+  (___,                        Key_F1,   Key_F2,            Key_F3,                   Key_F4,                   Key_F5,           ___,
+   ___,                        ___,      Key_mouseScrollR,  Key_mouseUp,              Key_mouseScrollL,         Key_mouseWarpEnd, Key_mouseWarpNE,
+   Consumer_ScanNextTrack,     ___,      Key_mouseL,        Key_mouseDn,              Key_mouseR,               Key_mouseWarpNW,
+   Consumer_ScanPreviousTrack, ___,      ___,               Consumer_VolumeDecrement, Consumer_VolumeIncrement, Key_mouseWarpSW,  Key_mouseWarpSE,
    ___, ___, ___, ___,
    ___,
 
-   Consumer_VolumeIncrement, Key_F6,                       Key_F7,               Key_F8,               Key_F9,                       Key_F10,    Key_F11,
-   Consumer_PlaySlashPause,  Key_mouseBtnL,                Key_Home,             Key_End,              Key_mouseBtnR,                ___,        Key_F12,
+   Key_mouseBtnL,            Key_F6,                       Key_F7,               Key_F8,               Key_F9,                       Key_F10,    Key_F11,
+   Consumer_PlaySlashPause,  Key_mouseBtnR,                Key_Home,             Key_End,              ___,                          ___,        Key_F12,
                              Key_LeftArrow,                Key_DownArrow,        Key_UpArrow,          Key_RightArrow,               ___,        ___,
-   Consumer_VolumeDecrement, LSHIFT(LALT(Key_LeftArrow)),  LALT(Key_LeftArrow),  LALT(Key_RightArrow), LSHIFT(LALT(Key_RightArrow)), ___,        ___,
+   Consumer_Mute,            LSHIFT(LALT(Key_LeftArrow)),  LALT(Key_LeftArrow),  LALT(Key_RightArrow), LSHIFT(LALT(Key_RightArrow)), ___,        ___,
    ___, ___, ___, ___,
    ___),
 
