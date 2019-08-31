@@ -261,10 +261,10 @@ KEYMAPS(
 
 
   [FUNC] =  KEYMAP_STACKED
-  (___,                        Key_F1,   Key_F2,            Key_F3,                   Key_F4,                   Key_F5,           ___,
-   ___,                        ___,      Key_mouseScrollR,  Key_mouseUp,              Key_mouseScrollL,         Key_mouseWarpEnd, Key_mouseWarpNE,
-   Consumer_ScanNextTrack,     ___,      Key_mouseL,        Key_mouseDn,              Key_mouseR,               Key_mouseWarpNW,
-   Consumer_ScanPreviousTrack, ___,      ___,               Consumer_VolumeDecrement, Consumer_VolumeIncrement, Key_mouseWarpSW,  Key_mouseWarpSE,
+  (___,                        Key_F1,                    Key_F2,            Key_F3,            Key_F4,             Key_F5,           ___,
+   ___,                        ___,                       Key_mouseScrollR,  Key_mouseUp,       Key_mouseScrollL,   Key_mouseWarpEnd, Key_mouseWarpNE,
+   Consumer_ScanNextTrack,     Consumer_VolumeIncrement,  Key_mouseL,        Key_mouseDn,       Key_mouseR,         Key_mouseWarpNW,
+   Consumer_ScanPreviousTrack, Consumer_VolumeDecrement,  ___,               Key_mouseScrollDn, Key_mouseScrollUp,  Key_mouseWarpSW,  Key_mouseWarpSE,
    ___, ___, ___, ___,
    ___,
 
@@ -612,7 +612,7 @@ void setup() {
   // Speed up mouse movement
   MouseKeys.speed = 16;
   MouseKeys.speedDelay = 1;
-  MouseKeys.accelSpeed = 6;
+  MouseKeys.accelSpeed = 3;
   MouseKeys.accelDelay = 64;
   MouseKeys.setSpeedLimit(150);
 
