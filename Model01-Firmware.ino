@@ -242,13 +242,13 @@ KEYMAPS(
   [PRIMARY] = KEYMAP_STACKED
   (Key_Escape,     Key_1,              Key_2,            Key_3,            Key_4,            Key_5, Key_LEDEffectNext,
    Key_Backtick,   Key_W,              Key_C,            Key_L,            Key_D,            Key_K, Key_Tab,
-   Key_PageUp,     MT(LeftGui, R),     MT(LeftAlt, S),   MT(LeftShift, T), LT(NUMPAD, H),    Key_M,
+   Key_PageUp,     MT(LeftAlt, R),     MT(LeftShift, S), MT(LeftGui, T),   LT(NUMPAD, H),    Key_M,
    Key_PageDown,   Key_X,              Key_V,            Key_G,            Key_F,            Key_B, LALT(LGUI(Key_LeftArrow)),
    OSM(LeftControl), Key_Spacebar, OSM(LeftShift), OSM(LeftGui), 
    ShiftToLayer(FUNC),
    ___,                   Key_6,          Key_7,             Key_8,             Key_9,              Key_0,                LockLayer(NUMPAD),
    Key_Enter,             Key_J,          Key_U,             Key_O,             Key_P,              Key_Y,                Key_Equals,
-                          Key_Comma,      LT(PUNC, A),       MT(RightShift, E), MT(RightAlt, N),    MT(RightGui, I),      Key_Semicolon,
+                          Key_Comma,      LT(PUNC, A),       MT(RightGui, E),   MT(RightShift, N),  MT(RightAlt, I),      Key_Semicolon,
    LCTRL(Key_UpArrow),    Key_Slash,      Key_Period,        Key_Quote,         Key_Z,              Key_Q,                Key_Minus,
    OSM(LeftAlt), OSM(RightShift), Key_Backspace, Key_Delete,
    ShiftToLayer(FUNC)),
@@ -640,6 +640,7 @@ void setup() {
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 5), M(MACRO_CUTLINE)),             // b
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 1), LGUI(Key_Q)),                  // w
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 2), LGUI(Key_W)),                  // c
+    kaleidoscope::plugin::Qukey(0, KeyAddr(1, 3), LGUI(Key_T)),                  // l
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 0), LGUI(Key_LeftArrow)),          // backtick
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 6), LCTRL(LSHIFT(LGUI(Key_4)))),   // led
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 9), LCTRL(Key_DownArrow)),         // butterfly
