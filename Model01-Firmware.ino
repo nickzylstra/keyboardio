@@ -246,10 +246,10 @@ KEYMAPS(
    Key_PageDown,   Key_X,              Key_V,            Key_G,            Key_F,            Key_B, LALT(LGUI(Key_LeftArrow)),
    OSM(LeftControl), Key_Spacebar, OSM(LeftShift), OSM(LeftGui), 
    ShiftToLayer(FUNC),
-   ___,                   Key_6,          Key_7,             Key_8,             Key_9,              Key_0,                LockLayer(NUMPAD),
+   Key_UpArrow,           Key_6,          Key_7,             Key_8,             Key_9,              Key_0,                LockLayer(NUMPAD),
    Key_Enter,             Key_J,          Key_U,             Key_O,             Key_P,              Key_Y,                Key_Equals,
                           Key_Comma,      LT(PUNC, A),       MT(RightGui, E),   MT(RightShift, N),  MT(RightAlt, I),      Key_Semicolon,
-   LCTRL(Key_UpArrow),    Key_Slash,      Key_Period,        Key_Quote,         Key_Z,              Key_Q,                Key_Minus,
+   Key_DownArrow,         Key_Slash,      Key_Period,        Key_Quote,         Key_Z,              Key_Q,                Key_Minus,
    OSM(LeftAlt), OSM(RightShift), Key_Backspace, Key_Delete,
    ShiftToLayer(FUNC)),
 
@@ -643,7 +643,7 @@ void setup() {
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 3), LGUI(Key_T)),                  // l
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 0), LGUI(Key_LeftArrow)),          // backtick
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 6), LCTRL(LSHIFT(LGUI(Key_4)))),   // led
-    kaleidoscope::plugin::Qukey(0, KeyAddr(2, 9), LCTRL(Key_DownArrow)),         // butterfly
+    kaleidoscope::plugin::Qukey(0, KeyAddr(2, 9), LCTRL(Key_UpArrow)),         // butterfly
     // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 9), Key_UpArrow),                  // enter
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 0), Key_UpArrow),                  // pgup
     // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 10), Key_Delete),                  // n
