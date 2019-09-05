@@ -105,7 +105,8 @@
 
 enum { MACRO_VERSION_INFO,
        MACRO_ANY,
-       MACRO_CUTLINE
+       MACRO_CUTLINE,
+       MACRO_VIMSAVEQUIT
      };
 
 
@@ -386,6 +387,11 @@ const macro_t *macroAction(uint8_t macroIndex, uint8_t keyState) {
                        U(LeftShift),
                        T(X),
                        U(LeftGui));
+    case MACRO_VIMSAVEQUIT:
+      return MACRODOWN(D(LeftShift), T(Semicolon), 
+                       U(LeftShift),
+                       T(W),
+                       T(Q));
   }
   return MACRO_NONE;
 }
@@ -631,6 +637,7 @@ void setup() {
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 13), Key_RightShift),           // homerowR3
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 14), Key_RightControl)          // homerowR4
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 6), LGUI(Key_Tab)),                // tab
+    kaleidoscope::plugin::Qukey(0, KeyAddr(0, 1), M(MACRO_VIMSAVEQUIT)),         // prog
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 6), LALT(LGUI(Key_RightArrow))),   // esc
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 15), LockLayer(QWERTY)),           // num
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), LGUI(Key_Z)),                  // x
