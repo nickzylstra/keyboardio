@@ -106,7 +106,8 @@
 enum { MACRO_VERSION_INFO,
        MACRO_ANY,
        MACRO_CUTLINE,
-       MACRO_VIMSAVEQUIT
+       MACRO_VIMSAVEQUIT,
+       MACRO_SELECTCURWORD
      };
 
 
@@ -270,7 +271,7 @@ KEYMAPS(
    ___,
 
    Key_mouseBtnR,            Key_F6,                       Key_F7,               Key_F8,               Key_F9,                       Key_F10,    Key_F11,
-   Consumer_PlaySlashPause,  Key_mouseBtnL,                Key_Home,             Key_End,              ___,                          ___,        Key_F12,
+   Consumer_PlaySlashPause,  Key_mouseBtnL,                Key_Home,             Key_End,              M(MACRO_SELECTCURWORD),       ___,        Key_F12,
                              Key_LeftArrow,                Key_DownArrow,        Key_UpArrow,          Key_RightArrow,               ___,        ___,
    Consumer_Mute,            LSHIFT(LALT(Key_LeftArrow)),  LALT(Key_LeftArrow),  LALT(Key_RightArrow), LSHIFT(LALT(Key_RightArrow)), ___,        ___,
    ___, ___, ___, ___,
@@ -387,11 +388,17 @@ const macro_t *macroAction(uint8_t macroIndex, uint8_t keyState) {
                        U(LeftShift),
                        T(X),
                        U(LeftGui));
+                       
     case MACRO_VIMSAVEQUIT:
       return MACRODOWN(D(LeftShift), T(Semicolon), 
                        U(LeftShift),
                        T(W),
                        T(Q));
+
+    case MACRO_SELECTCURWORD:
+      return MACRODOWN(D(LeftAlt), T(LeftArrow), 
+                       D(LeftShift), T(RightArrow),
+                       U(LeftShift), U(LeftAlt));
   }
   return MACRO_NONE;
 }
@@ -638,6 +645,7 @@ void setup() {
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 14), Key_RightControl)          // homerowR4
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 6), LGUI(Key_Tab)),                // tab
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 1), M(MACRO_VIMSAVEQUIT)),         // prog
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 13), M(MACRO_SELECTCURWORD)),      // p
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 6), LALT(LGUI(Key_RightArrow))),   // esc
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 15), LockLayer(QWERTY)),           // num
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), LGUI(Key_Z)),                  // x
