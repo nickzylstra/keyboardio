@@ -271,9 +271,9 @@ KEYMAPS(
    ___,
 
    Key_mouseBtnR,            Key_F6,                       Key_F7,               Key_F8,               Key_F9,                       Key_F10,    Key_F11,
-   Consumer_PlaySlashPause,  Key_mouseBtnL,                Key_Home,             Key_End,              M(MACRO_SELECTCURWORD),       ___,        Key_F12,
+   Consumer_PlaySlashPause,  Key_mouseBtnL,                LALT(Key_LeftArrow),  LALT(Key_RightArrow), M(MACRO_SELECTCURWORD),       ___,        Key_F12,
                              Key_LeftArrow,                Key_DownArrow,        Key_UpArrow,          Key_RightArrow,               ___,        ___,
-   Consumer_Mute,            LSHIFT(LALT(Key_LeftArrow)),  LALT(Key_LeftArrow),  LALT(Key_RightArrow), LSHIFT(LALT(Key_RightArrow)), ___,        ___,
+   Consumer_Mute,            LSHIFT(LALT(Key_LeftArrow)),  Key_Home,             Key_End,              LSHIFT(LALT(Key_RightArrow)), ___,        ___,
    ___, ___, ___, ___,
    ___),
 
