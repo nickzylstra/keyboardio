@@ -635,17 +635,16 @@ void setup() {
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 2), Key_LeftShift),             // homerowL3
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 3), ShiftToLayer(NAV)),         // homerowL2
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 4), Key_LeftAlt),               // homerowL1
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(0, 7), Key_LeftGui),            // homerowLThumb1
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(0, 7), Key_LeftGui),               // homerowLThumb1
     // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 7), Key_LeftGui),               // homerowLThumb2
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 8), Key_LeftGui),            // homaerowRThumb2
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(0, 8), Key_LeftGui),            // homerowRThumb1
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 8), Key_LeftGui),               // homaerowRThumb2
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(0, 8), Key_LeftGui),               // homerowRThumb1
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 11), ShiftToLayer(PUNC)),       // homerowR1
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 12), ShiftToLayer(MOUSE)),      // homerowR2
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 13), Key_RightShift),           // homerowR3
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 14), Key_RightControl)          // homerowR4
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 6), LGUI(Key_Tab)),                // tab
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 1), M(MACRO_VIMSAVEQUIT)),         // prog
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 13), M(MACRO_SELECTCURWORD)),      // p
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 6), LALT(LGUI(Key_RightArrow))),   // esc
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 15), LockLayer(QWERTY)),           // num
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), LGUI(Key_Z)),                  // x
@@ -657,8 +656,9 @@ void setup() {
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 2), LGUI(Key_W)),                  // c
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 3), LGUI(Key_T)),                  // l
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 0), LGUI(Key_LeftArrow)),          // backtick
-    kaleidoscope::plugin::Qukey(0, KeyAddr(0, 6), LCTRL(LSHIFT(LGUI(Key_4)))),   // led
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 9), LCTRL(Key_UpArrow)),         // butterfly
+    kaleidoscope::plugin::Qukey(0, KeyAddr(0, 5), LCTRL(LSHIFT(LGUI(Key_4)))),   // 5
+    kaleidoscope::plugin::Qukey(0, KeyAddr(0, 6), LGUI(Key_H)),                  // led
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 9), LCTRL(Key_UpArrow)),           // butterfly
     // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 9), Key_UpArrow),                  // enter
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 0), Key_UpArrow),                  // pgup
     // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 10), Key_Delete),                  // n
