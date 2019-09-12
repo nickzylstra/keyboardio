@@ -264,16 +264,16 @@ KEYMAPS(
 
   [FUNC] =  KEYMAP_STACKED
   (___,                        Key_F1,                    Key_F2,            Key_F3,            Key_F4,             Key_F5,           ___,
-   ___,                        ___,                       Key_mouseScrollR,  Key_mouseUp,       Key_mouseScrollL,   Key_mouseWarpEnd, Key_mouseWarpNE,
+   Consumer_PlaySlashPause,    Consumer_Mute,             Key_mouseScrollR,  Key_mouseUp,       Key_mouseScrollL,   Key_mouseWarpEnd, Key_mouseWarpNE,
    Consumer_ScanNextTrack,     Consumer_VolumeIncrement,  Key_mouseL,        Key_mouseDn,       Key_mouseR,         Key_mouseWarpNW,
    Consumer_ScanPreviousTrack, Consumer_VolumeDecrement,  ___,               Key_mouseScrollDn, Key_mouseScrollUp,  Key_mouseWarpSW,  Key_mouseWarpSE,
    ___, ___, ___, ___,
    ___,
 
-   Key_mouseBtnR,            Key_F6,                       Key_F7,               Key_F8,               Key_F9,                       Key_F10,    Key_F11,
-   Consumer_PlaySlashPause,  Key_mouseBtnL,                LALT(Key_LeftArrow),  LALT(Key_RightArrow), M(MACRO_SELECTCURWORD),       ___,        Key_F12,
-                             Key_LeftArrow,                Key_DownArrow,        Key_UpArrow,          Key_RightArrow,               ___,        ___,
-   Consumer_Mute,            LSHIFT(LALT(Key_LeftArrow)),  Key_Home,             Key_End,              LSHIFT(LALT(Key_RightArrow)), ___,        ___,
+   Key_mouseBtnR,     Key_F6,                       Key_F7,               Key_F8,               Key_F9,                       Key_F10,    Key_F11,
+   ___,               Key_mouseBtnL,                LALT(Key_LeftArrow),  LALT(Key_RightArrow), M(MACRO_SELECTCURWORD),       ___,        Key_F12,
+                      Key_LeftArrow,                Key_DownArrow,        Key_UpArrow,          Key_RightArrow,               ___,        ___,
+   ___,               LSHIFT(LALT(Key_LeftArrow)),  Key_Home,             Key_End,              LSHIFT(LALT(Key_RightArrow)), ___,        ___,
    ___, ___, ___, ___,
    ___),
 
