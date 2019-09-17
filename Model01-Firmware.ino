@@ -665,8 +665,8 @@ void setup() {
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 0), Key_DownArrow)                 // pgdn
   )
 
-  // Qukeys.setTimeout(250);
-  // Qukeys.setReleaseDelay(20);
+  // Qukeys.setHoldTimeout(250);
+  Qukeys.setOverlapThreshold(95);
 
   // set mod highlighting color
   ActiveModColorEffect.highlight_color = CRGB(0x00, 0xff, 0xff);
