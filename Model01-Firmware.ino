@@ -623,9 +623,9 @@ void setup() {
   ColormapEffect.max_layers(5);
 
   // Speed up mouse movement
-  MouseKeys.speed = 16;
+  MouseKeys.speed = 12;
   MouseKeys.speedDelay = 1;
-  MouseKeys.accelSpeed = 3;
+  MouseKeys.accelSpeed = 4;
   MouseKeys.accelDelay = 64;
   MouseKeys.setSpeedLimit(150);
 
@@ -644,7 +644,7 @@ void setup() {
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 13), Key_RightShift),           // homerowR3
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 14), Key_RightControl)          // homerowR4
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 6), LGUI(Key_Tab)),                // tab
-    kaleidoscope::plugin::Qukey(0, KeyAddr(0, 1), M(MACRO_VIMSAVEQUIT)),         // prog
+    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 15), M(MACRO_VIMSAVEQUIT)),        // minus
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 6), LALT(LGUI(Key_RightArrow))),   // esc
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 15), LockLayer(QWERTY)),           // num
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), LGUI(Key_Z)),                  // x
@@ -652,9 +652,9 @@ void setup() {
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 3), LGUI(Key_C)),                  // g
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 4), LGUI(Key_V)),                  // f
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 5), M(MACRO_CUTLINE)),             // b
-    kaleidoscope::plugin::Qukey(0, KeyAddr(1, 1), LGUI(Key_Q)),                  // w
-    kaleidoscope::plugin::Qukey(0, KeyAddr(1, 2), LGUI(Key_W)),                  // c
-    kaleidoscope::plugin::Qukey(0, KeyAddr(1, 3), LGUI(Key_T)),                  // l
+    kaleidoscope::plugin::Qukey(0, KeyAddr(0, 1), LGUI(Key_Q)),                  // 1
+    kaleidoscope::plugin::Qukey(0, KeyAddr(1, 1), LGUI(Key_W)),                  // w
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 2), LGUI(Key_T)),                  // c
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 0), LGUI(Key_LeftArrow)),          // backtick
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 5), LCTRL(LSHIFT(LGUI(Key_4)))),   // 5
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 6), LGUI(Key_H)),                  // led
