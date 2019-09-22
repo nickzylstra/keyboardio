@@ -3,7 +3,7 @@
 // See "LICENSE" for license details
 
 // graphic for layout
-// http://www.keyboard-layout-editor.com/#/gists/533277b2845dbbf0e685ad14a6455f91
+// http://www.keyboard-layout-editor.com/#/gists/a0fd4537e2cc0aeaaed49496837a8796
 
 #ifndef BUILD_INFORMATION
 #define BUILD_INFORMATION "locally built"
@@ -243,16 +243,16 @@ KEYMAPS(
 
 #elif defined (PRIMARY_KEYMAP_MTGAP)
   [PRIMARY] = KEYMAP_STACKED
-  (Key_Escape,     Key_1,              Key_2,            Key_3,            Key_4,            Key_5, Key_LEDEffectNext,
-   Key_Backtick,   Key_W,              Key_C,            Key_L,            Key_D,            Key_K, Key_Tab,
-   Key_PageUp,     MT(LeftAlt, R),     MT(LeftShift, S), MT(LeftGui, T),   LT(NUMPAD, H),    Key_M,
-   Key_PageDown,   Key_X,              Key_V,            Key_G,            Key_F,            Key_B, LALT(LGUI(Key_LeftArrow)),
+  (Key_Escape,     Key_1,              Key_2,            Key_3,            Key_4,          Key_5, Key_LEDEffectNext,
+   Key_Backtick,   Key_W,              Key_C,            Key_L,            Key_D,          Key_K, Key_Tab,
+   Key_PageUp,     MT(LeftAlt, R),     MT(LeftShift, S), MT(LeftGui, T),   LT(PUNC, H),    Key_M,
+   Key_PageDown,   Key_X,              Key_V,            Key_G,            Key_F,          Key_B, LALT(LGUI(Key_LeftArrow)),
    OSM(LeftControl), Key_Spacebar, OSM(LeftShift), OSM(LeftGui), 
    ShiftToLayer(FUNC),
-   Key_UpArrow,           Key_6,          Key_7,             Key_8,             Key_9,              Key_0,                LockLayer(NUMPAD),
-   Key_Enter,             Key_J,          Key_U,             Key_O,             Key_P,              Key_Y,                Key_Equals,
-                          Key_Comma,      LT(PUNC, A),       MT(RightGui, E),   MT(RightShift, N),  MT(RightAlt, I),      Key_Semicolon,
-   Key_DownArrow,         Key_Slash,      Key_Period,        Key_Quote,         Key_Z,              Key_Q,                Key_Minus,
+   Key_UpArrow,           Key_6,              Key_7,             Key_8,             Key_9,              Key_0,                LockLayer(NUMPAD),
+   Key_Enter,             Key_J,              Key_U,             Key_O,             Key_P,              Key_Y,                Key_Equals,
+                          Key_Comma,          LT(PUNC, A),       MT(RightGui, E),   MT(RightShift, N),  MT(RightAlt, I),      Key_Semicolon,
+   Key_DownArrow,         LSHIFT(Key_Slash),  Key_Period,        Key_Quote,         Key_Z,              Key_Q,                Key_Minus,
    OSM(LeftAlt), OSM(RightShift), Key_Backspace, Key_Delete,
    ShiftToLayer(FUNC)),
 
@@ -294,25 +294,25 @@ KEYMAPS(
    ___),
 
   [PUNC] =  KEYMAP_STACKED
-  (___,           ___,           ___,           ___,                     ___,                      ___,           ___,
-   Key_Backslash, LSHIFT(Key_2), LSHIFT(Key_3), LSHIFT(Key_LeftBracket), LSHIFT(Key_RightBracket), LSHIFT(Key_6), ___,
-   ___,           LSHIFT(Key_7), Key_Pipe,      LSHIFT(Key_9),           LSHIFT(Key_0),            LSHIFT(Key_1),
-   ___,           LSHIFT(Key_4), LSHIFT(Key_5), Key_LeftBracket,         Key_RightBracket,         LSHIFT(Key_8), ___,
+  (___, ___,           ___,           ___,                     ___,                      ___,           ___,
+   ___, LSHIFT(Key_2), LSHIFT(Key_3), LSHIFT(Key_LeftBracket), LSHIFT(Key_RightBracket), LSHIFT(Key_6), ___,
+   ___, LSHIFT(Key_7), Key_Pipe,      LSHIFT(Key_9),           LSHIFT(Key_0),            LSHIFT(Key_1),
+   ___, LSHIFT(Key_4), LSHIFT(Key_5), Key_LeftBracket,         Key_RightBracket,         Key_Backslash, ___,
    ___, ___, ___, ___,
    ___,
 
-   ___, ___, ___, ___, ___, ___, ___,
-   ___, ___, ___, ___, ___, ___, ___,
-        ___, ___, ___, ___, ___, ___,
-   ___, ___, ___, ___, ___, ___, ___,
+   ___, ___,                   ___,                ___,                ___,                ___,           ___,
+   ___, LSHIFT(Key_Backtick),  Key_Backtick,       LSHIFT(Key_8),      LSHIFT(Key_Equals), ___,           ___,
+        LSHIFT(Key_Semicolon), Key_Equals,         Key_Slash,          Key_Minus,          Key_Semicolon, ___,
+   ___, ___,                   LSHIFT(Key_Comma),  LSHIFT(Key_Period), LSHIFT(Key_Minus),  ___,           ___,
    ___, ___, ___, ___,
    ___),
 
   [QWERTY] = KEYMAP_STACKED
-  (___, Key_1, Key_2, Key_3, Key_4, Key_5, ___,
-   ___, Key_Q, Key_W, Key_E, Key_R, Key_T, ___,
-   ___, Key_A, Key_S, Key_D, Key_F, Key_G,
-   ___, Key_Z, Key_X, Key_C, Key_V, Key_B, ___,
+  (___,          Key_1, Key_2, Key_3, Key_4, Key_5, ___,
+   Key_Backtick, Key_Q, Key_W, Key_E, Key_R, Key_T, ___,
+   ___,          Key_A, Key_S, Key_D, Key_F, Key_G,
+   ___,          Key_Z, Key_X, Key_C, Key_V, Key_B, ___,
    ___, ___, ___, ___,
    ___,
 
