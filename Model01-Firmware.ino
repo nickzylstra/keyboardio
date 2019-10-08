@@ -660,6 +660,7 @@ void setup() {
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 1), LGUI(Key_Q)),                  // 1
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 2), LALT(LSHIFT(LGUI(Key_2)))),    // 2
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 3), LALT(LSHIFT(LGUI(Key_3)))),    // 3
+    kaleidoscope::plugin::Qukey(0, KeyAddr(0, 4), LALT(LSHIFT(LGUI(Key_4)))),    // 4
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 4), LGUI(Key_W)),                  // d
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 3), LGUI(Key_T)),                  // l
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 0), LGUI(Key_LeftArrow)),          // backtick
