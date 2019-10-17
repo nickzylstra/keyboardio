@@ -252,7 +252,7 @@ KEYMAPS(
    Key_UpArrow,           Key_6,              Key_7,             Key_8,             Key_9,              Key_0,                LockLayer(NUMPAD),
    Key_Enter,             Key_J,              Key_U,             Key_O,             Key_P,              Key_Y,                Key_Equals,
                           Key_Comma,          LT(PUNC, A),       MT(RightGui, E),   MT(RightShift, N),  MT(RightAlt, I),      Key_Semicolon,
-   Key_DownArrow,         Key_Slash,          Key_Period,        Key_Quote,         Key_Z,              Key_Q,                Key_Minus,
+   Key_DownArrow,         LSHIFT(Key_Slash),  Key_Period,        Key_Quote,         Key_Z,              Key_Q,                Key_Minus,
    OSM(LeftAlt), OSM(RightShift), Key_Backspace, Key_Delete,
    ShiftToLayer(FUNC)),
 
