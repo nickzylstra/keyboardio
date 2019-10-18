@@ -648,7 +648,8 @@ void setup() {
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 13), Key_RightShift),           // homerowR3
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 14), Key_RightControl)          // homerowR4
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 6), LGUI(Key_Tab)),                // tab
-    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 15), M(MACRO_VIMSAVEQUIT)),        // minus
+    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 14), M(MACRO_VIMSAVEQUIT)),        // q
+    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 15), Key_RightShift),              // minus
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 15), M(MACRO_TRIPEQ)),             // =
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 6), LALT(LGUI(Key_RightArrow))),   // esc
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 15), LockLayer(QWERTY)),           // num
@@ -668,9 +669,9 @@ void setup() {
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 6), LGUI(Key_H)),                  // led
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 9), LCTRL(Key_UpArrow)),           // butterfly
     // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 9), Key_UpArrow),                  // enter
-    kaleidoscope::plugin::Qukey(0, KeyAddr(2, 0), Key_UpArrow),                  // pgup
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 0), Key_UpArrow),                  // pgup
     // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 10), Key_Delete),                  // n
-    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 0), Key_DownArrow)                 // pgdn
+    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 0), Key_LeftShift)                    // pgdn
   )
 
   // Qukeys.setHoldTimeout(250);
