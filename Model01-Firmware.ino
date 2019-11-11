@@ -651,11 +651,12 @@ void setup() {
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 6), LGUI(Key_Tab)),                // tab
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 15), M(MACRO_VIMSAVEQUIT)),        // ;
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 14), Key_RightControl),            // q
+    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), Key_LeftControl),              // x
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 15), Key_RightShift),              // minus
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 15), M(MACRO_TRIPEQ)),             // =
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 6), LALT(LGUI(Key_RightArrow))),   // esc
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 15), LockLayer(QWERTY)),           // num
-    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), LGUI(Key_Z)),                  // x
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), LGUI(Key_Z)),                  // x
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 2), LGUI(Key_X)),                  // v
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 3), LGUI(Key_C)),                  // g
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 4), LGUI(Key_V)),                  // f
