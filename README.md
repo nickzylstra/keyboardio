@@ -1,5 +1,7 @@
 _The Nick Zylstra version for the Keyboardio Model 01_
 
+![layout](./keyboardlayout.png)
+
 # Keyboardio Model 01 Firmware
 
 <h3>This is a quick start guide for folks who are familiar with Arduino and prefer to use the command line. For everyone else:
