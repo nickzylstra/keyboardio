@@ -3,7 +3,7 @@
 // See "LICENSE" for license details
 
 // graphic for layout
-// http://www.keyboard-layout-editor.com/#/gists/a0fd4537e2cc0aeaaed49496837a8796
+// http://www.keyboard-layout-editor.com/#/gists/feafaf849ad67f46104d01df7c9f2919
 
 #ifndef BUILD_INFORMATION
 #define BUILD_INFORMATION "locally built"
@@ -247,13 +247,13 @@ KEYMAPS(
    Key_Backtick,   Key_W,              Key_C,            Key_L,            Key_D,          Key_K, Key_Tab,
    Key_PageDown,   MT(LeftAlt, R),     MT(LeftShift, S), MT(LeftGui, T),   LT(PUNC, H),    Key_M,
    Key_LeftShift,  Key_X,              Key_V,            Key_G,            Key_F,          Key_B, LALT(LGUI(Key_LeftArrow)),
-   OSM(LeftControl), Key_Spacebar, OSM(LeftShift), OSM(LeftGui), 
+   LGUI(Key_X), Key_Spacebar, LGUI(Key_C), LGUI(Key_V), 
    ShiftToLayer(FUNC),
    Key_UpArrow,           Key_6,              Key_7,             Key_8,             Key_9,              Key_0,                LockLayer(NUMPAD),
    Key_Enter,             Key_J,              Key_U,             Key_O,             Key_P,              Key_Y,                Key_Equals,
                           Key_Comma,          LT(PUNC, A),       MT(RightGui, E),   MT(RightShift, N),  MT(RightAlt, I),      LCTRL(Key_Backtick),
    Key_DownArrow,         LSHIFT(Key_Slash),  Key_Period,        Key_Quote,         Key_Z,              Key_Q,                Key_RightShift,
-   OSM(LeftAlt), OSM(RightShift), Key_Backspace, Key_Delete,
+   M(MACRO_CUTLINE), LGUI(Key_Z), Key_Backspace, Key_Delete,
    ShiftToLayer(FUNC)),
 
 #else
@@ -269,14 +269,14 @@ KEYMAPS(
    Consumer_ScanNextTrack,     Consumer_VolumeIncrement,  Key_mouseL,        Key_mouseDn,       Key_mouseR,         Key_mouseWarpNW,
    Consumer_ScanPreviousTrack, Consumer_VolumeDecrement,  ___,               Key_mouseScrollDn, Key_mouseScrollUp,  Key_mouseWarpSW,  Key_mouseWarpSE,
    ___, ___, ___, ___,
-   ___,
+   ShiftToLayer(PUNC),
 
    Key_mouseBtnR,     Key_F6,                       Key_F7,               Key_F8,               Key_F9,                       Key_F10,    Key_F11,
    ___,               Key_mouseBtnL,                LALT(Key_LeftArrow),  LALT(Key_RightArrow), M(MACRO_SELECTCURWORD),       ___,        Key_F12,
                       Key_LeftArrow,                Key_DownArrow,        Key_UpArrow,          Key_RightArrow,               ___,        ___,
    ___,               LSHIFT(LALT(Key_LeftArrow)),  Key_Home,             Key_End,              LSHIFT(LALT(Key_RightArrow)), ___,        ___,
    ___, ___, ___, ___,
-   ___),
+   ShiftToLayer(PUNC)),
 
   [NUMPAD] =  KEYMAP_STACKED
   (___, ___, ___, ___, ___, ___, ___,
@@ -649,18 +649,18 @@ void setup() {
     // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 14), Key_RightControl)          // homerowR4
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 6), Key_LEDEffectNext),            // led 
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 6), LGUI(Key_Tab)),                // tab
-    kaleidoscope::plugin::Qukey(0, KeyAddr(2, 15), M(MACRO_VIMSAVEQUIT)),        // ;
+    kaleidoscope::plugin::Qukey(0, KeyAddr(2, 15), LALT(LSHIFT(Key_LeftGui))),   // '
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 14), Key_RightControl),            // q
     kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), Key_LeftControl),              // x
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 15), Key_RightShift),              // minus
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 15), Key_RightShift),           // minus
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 15), M(MACRO_TRIPEQ)),             // =
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 6), LALT(LGUI(Key_RightArrow))),   // esc
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 15), LockLayer(QWERTY)),           // num
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), LGUI(Key_Z)),                  // x
-    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 2), LGUI(Key_X)),                  // v
-    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 3), LGUI(Key_C)),                  // g
-    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 4), LGUI(Key_V)),                  // f
-    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 5), M(MACRO_CUTLINE)),             // b
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 1), LGUI(Key_Z)),               // x
+//    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 2), LGUI(Key_X)),                // v
+//    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 3), LGUI(Key_C)),                // g
+//    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 4), LGUI(Key_V)),                // f
+//    kaleidoscope::plugin::Qukey(0, KeyAddr(3, 5), M(MACRO_CUTLINE)),           // b
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 1), LGUI(Key_Q)),                  // 1
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 2), LALT(LSHIFT(LGUI(Key_2)))),    // 2
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 3), LALT(LSHIFT(LGUI(Key_3)))),    // 3
@@ -669,11 +669,11 @@ void setup() {
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 3), LGUI(Key_T)),                  // l
     kaleidoscope::plugin::Qukey(0, KeyAddr(1, 0), LGUI(Key_LeftArrow)),          // backtick
     kaleidoscope::plugin::Qukey(0, KeyAddr(0, 5), LCTRL(LSHIFT(LGUI(Key_4)))),   // 5
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(0, 6), LGUI(Key_H)),                  // led
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 9), LCTRL(Key_UpArrow)),           // butterfly
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 9), Key_UpArrow),                  // enter
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 0), Key_UpArrow),                  // pgup
-    // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 10), Key_Delete),                  // n
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(0, 6), LGUI(Key_H)),               // led
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 9), LCTRL(Key_UpArrow)),        // butterfly
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(1, 9), Key_UpArrow),               // enter
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(2, 0), Key_UpArrow),               // pgup
+    // kaleidoscope::plugin::Qukey(0, KeyAddr(3, 10), Key_Delete),               // n
     kaleidoscope::plugin::Qukey(0, KeyAddr(2, 0), Key_PageUp)                    // pgup
   )
 
